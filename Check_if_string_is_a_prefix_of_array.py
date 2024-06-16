@@ -10,9 +10,9 @@ class Solution:
             return False
         
         for i in words:
-            if i in s:
-                s = s[len(i):]
-            elif s == "":
+            if s == "":
                 return True
+            elif i in s:
+                s = s[len(i):]
             else:
                 return False
